@@ -5,9 +5,9 @@ require "rexml/document"
 
 include REXML
 
-Camping.goes :Xtrail
+Camping.goes :Hiking
 
-  module Xtrail::Controllers
+  module Hiking::Controllers
     class Index < R '/'
       def get
         @xml = input.xml
@@ -111,16 +111,16 @@ Camping.goes :Xtrail
     end
   end
 
-  module Xtrail::Views
+  module Hiking::Views
     def layout
       html do
         head do
-          title 'Xtrail - An XPATH Interpreter'
+          title 'Hiking - An XPATH Interpreter'
           link :rel => 'stylesheet', :type => 'text/css',
             :href => '/style.css', :media => 'screen'
         end
         body do
-          h1.header 'Xtrail - An XPATH Interpreter'
+          h1.header 'Hiking - An XPATH Interpreter'
           div.content do
             self << yield
           end
