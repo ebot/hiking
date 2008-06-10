@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require 'hiking'
+require 'webrick/httpserver'
+require 'camping/webrick'
+
+puts ''
+puts '** Start hiking at http://localhost:5501'
+puts '   Stop hiking with Ctrl+C'
+puts ''
+
+s = WEBrick::HTTPServer.new :BindAddress => "0.0.0.0", :Port => 5501
+s.mount "/", WEBrick::CampingHandler, Hiking
+
+# This lets Ctrl+C shut down your server
+trap(:INT) do
+  s.shutdown
+end
+
+s.start
