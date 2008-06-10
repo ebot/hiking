@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
    s.homepage = %q{http://edbotz.us}
    s.description = %q{A tiny xpath application written with the camping microframework.}
    s.files = ["public/hiking.rb"]
+   .test_files = ['test/test_hiking.rb']
    s.executables = ["go_hiking"]
    s.default_executable = "go_hiking"
    s.require_paths << "bin" 
