@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
    s.version = "0.1.0"
    s.date = %q{2008-06-09}
    s.authors = ["Ed Botzum"]
-   s.email = %q{blog@chocolatay.com.com}
+   s.email = %q{blog@edbotz.us}
    s.summary = %q{A tiny xpath application written with the camping microframework.}
    s.homepage = %q{http://edbotz.us}
    s.description = %q{A tiny xpath application written with the camping microframework.}
