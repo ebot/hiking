@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'mosquito'
-require File.dirname(__FILE__) + "/../public/xtrail"
+require File.dirname(__FILE__) + "/../public/hiking"
 
 class TestHiking < Camping::WebTest
   test_xml = '<test><item number="1">First Item</item></test>'
@@ -19,6 +19,6 @@ class TestHiking < Camping::WebTest
     
     assert_response :success
     
-    assert_match_body %r{<textarea rows=\"19\" name=\"results\" id=\"results\" cols=\"30\">1</textarea>}
+    assert_match_body %r{<textarea name=\"results\" cols=\"30\" rows=\"19\" id=\"results\">1</textarea>}
   end
 end
