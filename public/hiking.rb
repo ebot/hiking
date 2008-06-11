@@ -1,14 +1,5 @@
 #!/usr/bin/env ruby
 
-# This program utilizes the camping micro-framework
-# to create a web based xpath interpreter.
-#
-# Pastie at http://pastie.org/private/6snpjuev5ftdf3yjwaabjq
-#
-# Author::    Ed Botzum  (mailto:blog@edbotz.us)
-# Copyright:: Copyright (c) 2008 edbotz.us
-# License::   Distributes under the same terms as Ruby
-
 require 'camping'
 require "rexml/document"
 
