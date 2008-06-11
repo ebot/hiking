@@ -6,6 +6,10 @@ Gem::Specification.new do |s|
   s.description = %q{A tiny xpath application written with the camping microframework.}
   s.rubyforge_project = "hiking"
   
+  s.specification_version = 2 if s.respond_to? :specification_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.rubygems_version = %q{1.1.0}
+  
   s.authors = ['Ed Botzum']
   s.email = %q{blog@edbotz.us}
   s.homepage = %q{http://github.com/ebot/hiking}
