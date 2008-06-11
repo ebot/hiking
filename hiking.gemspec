@@ -16,8 +16,9 @@ Gem::Specification.new do |s|
   s.default_executable = 'go_hiking'
   s.require_paths = ['public', 'test']
   
-  s.add_dependency('camping', ['>= 1.5.0'])
   s.has_rdoc = true
   s.extra_rdoc_files = ['README']
   s.rdoc_options = ['--main', 'README']
+  
+  s.add_dependency('camping', ['>= 1.5.0'])
 end
