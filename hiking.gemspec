@@ -4,6 +4,7 @@ Gem::Specification.new do |s|
   s.date = %q{2008-06-09}
   s.summary = %q{A tiny xpath application written with the camping microframework.}
   s.description = %q{A tiny xpath application written with the camping microframework.}
+  s.rubyforge_project = "hiking"
   
   s.authors = ['Ed Botzum']
   s.email = %q{blog@edbotz.us}
