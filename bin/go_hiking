@@ -1,11 +1,12 @@
 #!/usr/bin/env ruby
+require 'rubygems'
 require 'hiking'
 require 'webrick/httpserver'
 require 'camping/webrick'
 
 puts ''
-puts '** Start hiking at http://localhost:5501'
-puts '   Stop hiking with Ctrl+C'
+puts '** Start your hike down the xpath at http://localhost:5501 **'
+puts '** End your hike down the xpath with Ctrl+C **'
 puts ''
 
 s = WEBrick::HTTPServer.new :BindAddress => "0.0.0.0", :Port => 5501
