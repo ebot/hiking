@@ -20,5 +20,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ['README']
   s.rdoc_options = ['--main', 'README']
   
+  s.rubygems_version = %q{1.1.1}
+  
   s.add_dependency('camping', ['>= 1.5.0'])
 end
