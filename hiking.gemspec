@@ -1,26 +1,34 @@
+# -*- encoding: utf-8 -*-
+
 Gem::Specification.new do |s|
-  s.name = 'hiking'
-  s.version = '0.1.1'
-  s.date = '2008-06-09'
-  s.summary = 'A tiny xpath application written with the camping microframework.'
-  s.description = 'A tiny xpath application written with the camping microframework.'
-  s.rubyforge_project = 'hiking'
-  
-  s.authors = ['Ed Botzum']
-  s.email = 'blog@edbotz.us'
-  s.homepage = 'http://github.com/ebot/hiking'
-  
-  s.files = ['public/hiking.rb']
-  s.test_files = ['test/test_hiking.rb']
-  s.executables = ['go_hiking']
-  s.default_executable = 'go_hiking'
-  s.require_paths = ['public', 'test']
-  
+  s.name = %q{hiking}
+  s.version = "0.1.0"
+
+  s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
+  s.authors = ["Ed Botzum"]
+  s.date = %q{2008-11-10}
+  s.default_executable = %q{go_hiking}
+  s.description = %q{A tiny xpath application written with the camping microframework.}
+  s.email = %q{contact@edbotz.us}
+  s.executables = ["go_hiking"]
+  s.extra_rdoc_files = ["bin/go_hiking", "README"]
+  s.files = ["bin/go_hiking", "hiking.gemspec", "public/hiking.rb", "Rakefile", "README", "test/test_hiking.rb", "Manifest"]
   s.has_rdoc = true
-  s.extra_rdoc_files = ['README']
-  s.rdoc_options = ['--main', 'README']
-  
-  s.rubygems_version = %q{1.1.1}
-  
-  s.add_dependency('camping', ['>= 1.5.0'])
+  s.homepage = %q{http://github.com/ebot/hiking}
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Hiking", "--main", "README"]
+  s.require_paths = ["lib"]
+  s.rubyforge_project = %q{hiking}
+  s.rubygems_version = %q{1.3.1}
+  s.summary = %q{A tiny xpath application written with the camping microframework.}
+  s.test_files = ["test/test_hiking.rb"]
+
+  if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
+    s.specification_version = 2
+
+    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    else
+    end
+  else
+  end
 end
