@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email = %q{contact@edbotz.us}
   s.executables = ["go_hiking"]
   s.extra_rdoc_files = ["bin/go_hiking", "README"]
-  s.files = ["bin/go_hiking", "hiking.gemspec", "public/hiking.rb", "Rakefile", "README", "test/test_hiking.rb", "Manifest"]
+  s.files = ["bin/go_hiking", "Manifest", "public/hiking.rb", "Rakefile", "README", "test/test_hiking.rb", "hiking.gemspec"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/ebot/hiking}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Hiking", "--main", "README"]
@@ -27,8 +27,11 @@ Gem::Specification.new do |s|
     s.specification_version = 2
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_development_dependency(%q<camping>, [">= 0", "= 1.5.0"])
     else
+      s.add_dependency(%q<camping>, [">= 0", "= 1.5.0"])
     end
   else
+    s.add_dependency(%q<camping>, [">= 0", "= 1.5.0"])
   end
 end
