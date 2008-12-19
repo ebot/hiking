@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = true
   s.homepage = %q{http://github.com/ebot/hiking}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Hiking", "--main", "README"]
-  s.require_paths = ["lib"]
+  s.require_paths = ["public"]
   s.rubyforge_project = %q{hiking}
   s.rubygems_version = %q{1.3.1}
   s.summary = %q{A tiny xpath application written with the camping microframework.}
